@@ -1,0 +1,19 @@
+{
+  "name": "@eggdev/cracl",
+  "version": "1.0.0",
+  "description": "React App Component Generator",
+  "author": "Brendan Eggers <eggers.brendan@gmail.com>",
+  "homepage": "https://github.com/eggdev/cracl#readme",
+  "license": "MIT",
+  "main": "./lib/cracl.js",
+  "bin": {
+    "cracl": "./bin/index.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ]
+}
