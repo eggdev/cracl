@@ -1,0 +1,22 @@
+{
+  "name": "javascript-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:eggdev/javascript-template.git",
+  "author": "Brendan Eggers <eggers.brendan@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "eslint": "^7.26.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.0"
+  },
+  "scripts": {
+    "init:all": "lerna run --parallel init",
+    "lerna:build": "lerna run --parallel build",
+    "lerna:publish": "lerna version && lerna publish from-git"
+  }
+}
