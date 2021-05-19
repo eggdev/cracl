@@ -5,6 +5,4 @@ exports.cracl = async () => {
   const args = process.argv;
   const userArgs = await parseOptions(args);
   const config = await generateConfig();
-
-  console.log(userArgs, config);
 };
