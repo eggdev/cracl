@@ -1,8 +1,11 @@
 const fs = require('fs');
 
 const defaultConfig = {
-  monorepo: false,
-  withIndex: false,
+  monorepo: {
+    packages: 'packages',
+    app: 'main',
+  },
+  withIndex: true,
 };
 
 const generateConfig = async () => {
