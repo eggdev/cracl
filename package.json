@@ -18,5 +18,8 @@
     "init:all": "lerna run --parallel init",
     "lerna:build": "lerna run --parallel build",
     "lerna:publish": "lerna version && lerna publish from-git"
+  },
+  "dependencies": {
+    "dashdash": "^2.0.0"
   }
 }
