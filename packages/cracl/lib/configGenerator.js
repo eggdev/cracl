@@ -5,10 +5,11 @@ const defaultConfig = {
     packages: 'packages',
     app: 'main',
   },
-  withIndex: true,
+  withTest: false,
+  withIndex: false,
 };
 
-const generateConfig = async () => {
+const generateDefaultConfig = async () => {
   const configFilePath = `${process.cwd()}/.craclconfig.json`;
   let config = {
     ...defaultConfig,
@@ -31,6 +32,26 @@ const generateConfig = async () => {
     // do nothing
   }
   return config;
+};
+
+const generateConfig = async (userArgs) => {
+  const mixedConfig = await generateDefaultConfig();
+  // Ignore use of App if its not a mono repo
+  const argsKeys = Object.keys(userArgs);
+  const finalConfig = {
+    ...mixedConfig,
+    newFiles: [],
+  };
+  argsKeys.map((k) => {
+    if (k === '_order' || k === '_args') return;
+    if (k === 'app') finalConfig.monorepo[k] = userArgs[k];
+    finalConfig.newFiles.push({
+      type: k,
+      name: userArgs[k],
+    });
+  });
+
+  return finalConfig;
 };
 
 module.exports = {

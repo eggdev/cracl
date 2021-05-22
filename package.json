@@ -22,6 +22,7 @@
     "lerna:publish": "lerna version && lerna publish from-git"
   },
   "dependencies": {
-    "dashdash": "^2.0.0"
+    "dashdash": "^2.0.0",
+    "handlebars": "^4.7.7"
   }
 }
