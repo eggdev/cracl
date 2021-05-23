@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.5](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.4.4...@eggdev/cracl@0.4.5) (2021-05-23)
+
+
+### Bug Fixes
+
+* making app logic work properly ([f48508a](https://github.com/eggdev/cracl/commit/f48508a0062fc98c0ff9a11d0a66f453bc6e468c))
+
+
+
+
+
 ## [0.4.4](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.4.3...@eggdev/cracl@0.4.4) (2021-05-23)
 
 
