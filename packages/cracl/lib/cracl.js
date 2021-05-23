@@ -17,7 +17,7 @@ exports.cracl = async () => {
 
   const isMonoRepo = Boolean(config.monorepo) && dirs.includes(config.monorepo);
   const appDir = isMonoRepo
-    ? `${config.monorepo.packagesFolder}/${config.defaultApp}/src`
+    ? `${config.monorepo}/${config.defaultApp}/src`
     : 'src';
 
   // You want to allow a user to run 3 things at once if they want to generate a bunch of files
