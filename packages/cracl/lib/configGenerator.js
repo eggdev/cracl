@@ -44,7 +44,7 @@ const generateConfig = async (userArgs) => {
   };
   argsKeys.map((k) => {
     if (k === '_order' || k === '_args') return;
-    if (k === 'app') return (finalConfig.monorepo = userArgs[k]);
+    if (k === 'app') return (finalConfig.defaultApp = userArgs[k]);
     finalConfig.newFiles.push({
       type: k,
       name: userArgs[k],
