@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.4.0...@eggdev/cracl@0.4.2) (2021-05-23)
+
+
+### Bug Fixes
+
+* not sure why version isnt working ([bdd5131](https://github.com/eggdev/cracl/commit/bdd5131d6aac7f25c755b84d8cf081dc968cf7e4))
+* peerdeps ([bbe5871](https://github.com/eggdev/cracl/commit/bbe5871b3200837904bca31e64695d90afd1dcb0))
+
+
+
+
+
 # [0.4.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.3.0...@eggdev/cracl@0.4.0) (2021-05-23)
 
 
