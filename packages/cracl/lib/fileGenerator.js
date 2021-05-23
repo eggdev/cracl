@@ -1,6 +1,7 @@
 const {writeFileSync} = require('fs');
 const Handlebars = require('handlebars');
 const {pascalCase, camelCase} = require('change-case');
+const {confirmOrWriteDirectory} = require('./utils');
 
 const parseFileName = (type, name) => {
   switch (type) {
@@ -17,9 +18,10 @@ const parseFileName = (type, name) => {
   }
 };
 
-const writeToPath = async (filePath, js) => {
+const writeToPath = async (folderPath, filename, js) => {
   // Prompt to continue if file already exists
-  await writeFileSync(filePath, js);
+  await confirmOrWriteDirectory(`${folderPath}/${filename}`);
+  await writeFileSync(`${folderPath}/${filename}/${filename}.js`, js);
 };
 
 const generateFiles = async (path, type, name) => {
@@ -30,10 +32,10 @@ const generateFiles = async (path, type, name) => {
   const filename = parseFileName(type, name);
 
   // Generate the file and path with proper variables
-  const filePath = `${path}/${type}/${filename}/${filename}.js`;
+  const folderPath = `${path}/${type}`;
   const js = template({filename});
 
-  await writeToPath(filePath, js);
+  await writeToPath(folderPath, filename, js);
 };
 
 module.exports = {

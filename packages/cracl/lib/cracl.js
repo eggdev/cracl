@@ -2,6 +2,7 @@ const {readdirSync} = require('fs');
 const {parseOptions} = require('./options');
 const {generateConfig} = require('./configGenerator');
 const {generateFiles} = require('./fileGenerator');
+const {confirmOrWriteDirectory} = require('./utils');
 
 exports.cracl = async () => {
   const args = process.argv;
@@ -15,10 +16,11 @@ exports.cracl = async () => {
 
   const dirs = getDirectories(`${process.cwd()}`);
 
-  const isMonoRepo = dirs.includes(config.monorepo.packagesFolder);
+  const isMonoRepo = Boolean(config.monorepo) && dirs.includes(config.monorepo);
   const appDir = isMonoRepo
     ? `${config.monorepo.packagesFolder}/${config.defaultApp}/src`
     : 'src';
+
   // You want to allow a user to run 3 things at once if they want to generate a bunch of files
   const fileWritePath = `${process.cwd()}/${appDir}`;
 

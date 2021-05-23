@@ -1,8 +1,8 @@
 {
-  "name": "javascript-template",
+  "name": "@eggdev/cracl",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:eggdev/javascript-template.git",
+  "repository": "git@github.com:eggdev/cracl.git",
   "author": "Brendan Eggers <eggers.brendan@gmail.com>",
   "license": "MIT",
   "devDependencies": {
