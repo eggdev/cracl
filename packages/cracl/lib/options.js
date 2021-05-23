@@ -16,20 +16,28 @@ const options = [
     help: 'Use if generating a Component',
   },
   {
-    names: ['hooks', 'hook', 'hk'],
+    names: ['hooks', 'hook', 'k'],
     type: 'string',
     help: 'Use if generating a Hook',
   },
-  {
-    names: ['routes', 'route', 'r'],
-    type: 'string',
-    help: 'Use if generating a Route',
-  },
-  {
-    names: ['test', 't'],
-    type: 'bool',
-    help: 'Use if a test should be generated',
-  },
+  // TODO: If it's Next.js you want to change it to be pages directory
+  // {
+  //   names: ['routes', 'route', 'r'],
+  //   type: 'string',
+  //   help: 'Use if generating a Route',
+  // },
+  // TODO: Need to confirm Testing tool so in package.json/config so you can generate the right type
+  // {
+  //   names: ['test', 't'],
+  //   type: 'bool',
+  //   help: 'Use if a test should be generated',
+  // },
+  // TODO: Need to make this option passed with the component so it can be generated at the proper path
+  // {
+  //   names: ['index', 'i'],
+  //   type: 'bool',
+  //   help: 'Use if you want to generate an index.js file that exports the new component',
+  // },
 ];
 
 const parseOptions = (args) => {

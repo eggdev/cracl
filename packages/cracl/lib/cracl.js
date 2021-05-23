@@ -2,7 +2,6 @@ const {readdirSync} = require('fs');
 const {parseOptions} = require('./options');
 const {generateConfig} = require('./configGenerator');
 const {generateFiles} = require('./fileGenerator');
-const {confirmOrWriteDirectory} = require('./utils');
 
 exports.cracl = async () => {
   const args = process.argv;

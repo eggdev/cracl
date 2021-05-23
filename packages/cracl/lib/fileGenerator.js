@@ -26,7 +26,7 @@ const writeToPath = async (folderPath, filename, js) => {
 
 const generateFiles = async (path, type, name) => {
   // Grab the file template that needs to be used
-  const templateString = require(`./templates/${type}.js`);
+  const templateString = require(`./templates/_${type}.js`);
   const template = Handlebars.compile(templateString);
   // Update the file name for consistency
   const filename = parseFileName(type, name);
