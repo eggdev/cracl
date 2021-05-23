@@ -16,5 +16,10 @@
   "files": [
     "lib"
   ],
-  "gitHead": "577c847ac80ef28d36d9463b45dd1c865fd8da03"
+  "gitHead": "577c847ac80ef28d36d9463b45dd1c865fd8da03",
+  "peerDependencies": {
+    "change-case": "^4.1.2",
+    "dashdash": "^2.0.0",
+    "handlebars": "^4.7.7"
+  }
 }
