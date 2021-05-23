@@ -25,5 +25,10 @@
     "change-case": "^4.1.2",
     "dashdash": "^2.0.0",
     "handlebars": "^4.7.7"
+  },
+  "peerDependencies": {
+    "change-case": "^4.1.2",
+    "dashdash": "^2.0.0",
+    "handlebars": "^4.7.7"
   }
 }
