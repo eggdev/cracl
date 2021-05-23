@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.3.0...@eggdev/cracl@0.4.0) (2021-05-23)
+
+
+### Features
+
+* creating basic templates and combing configs ([46cd076](https://github.com/eggdev/cracl/commit/46cd0760012ccda2069d2b6dfe713c97855d43ce))
+* getting app to define the paths and run a generator for all options passed ([decb1ad](https://github.com/eggdev/cracl/commit/decb1ad8799008f8ac2b1e78fc374681808f435b))
+* writing a file with a template to the proper path ([6c47fc9](https://github.com/eggdev/cracl/commit/6c47fc91740b2a425445c0b5006ae8db1ce429f7))
+
+
+
+
+
 # [0.3.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.2.1...@eggdev/cracl@0.3.0) (2021-05-19)
 
 
