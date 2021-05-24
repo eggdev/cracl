@@ -1,4 +1,3 @@
-const {readdirSync} = require('fs');
 const {parseOptions} = require('./options');
 const {generateConfig} = require('./configGenerator');
 const {generateFiles} = require('./fileGenerator');
@@ -8,14 +7,7 @@ exports.cracl = async () => {
   const userArgs = await parseOptions(args);
   const config = await generateConfig(userArgs);
 
-  const getDirectories = (source) =>
-    readdirSync(source, {withFileTypes: true})
-      .filter((dirent) => dirent.isDirectory())
-      .map((dirent) => dirent.name);
-
-  const dirs = getDirectories(`${process.cwd()}`);
-
-  const isMonoRepo = Boolean(config.monorepo) && dirs.includes(config.monorepo);
+  const isMonoRepo = Boolean(config.monorepo);
   const appDir = isMonoRepo
     ? `${config.monorepo}/${config.defaultApp}/src`
     : 'src';
