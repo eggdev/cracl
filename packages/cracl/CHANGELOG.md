@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.4.6...@eggdev/cracl@0.5.0) (2021-05-25)
+
+
+### Bug Fixes
+
+* cleaning up remaining import ([f2b5100](https://github.com/eggdev/cracl/commit/f2b5100d16a9f62f2185d8e421c08433487f80ed))
+
+
+### Features
+
+* refactor to class based package that handles config changes much better ([d640be6](https://github.com/eggdev/cracl/commit/d640be6e477429bb1173b2dad7272d30a2aac892))
+
+
+
+
+
 ## [0.4.6](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.4.5...@eggdev/cracl@0.4.6) (2021-05-23)
 
 
