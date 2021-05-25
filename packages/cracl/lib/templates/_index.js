@@ -1,3 +1,4 @@
 module.exports = `import {{filename}} from './{{filename}}';
 
-export default {{filename}};`;
+export default {{filename}};
+`;
