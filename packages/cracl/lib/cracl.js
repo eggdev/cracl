@@ -1,21 +1,19 @@
 const {parseOptions} = require('./options');
-const {generateConfig} = require('./configGenerator');
-const {generateFiles} = require('./fileGenerator');
+const {Cracl} = require('./classes/Cracl');
 
 exports.cracl = async () => {
   const args = process.argv;
   const userArgs = await parseOptions(args);
-  const config = await generateConfig(userArgs);
 
-  const isMonoRepo = Boolean(config.monorepo);
-  const appDir = isMonoRepo
-    ? `${config.monorepo}/${config.defaultApp}/src`
+  const cracl = new Cracl();
+  await cracl.generateAppConfig();
+  await cracl.applyUserArgs(userArgs);
+  cracl.isMonoRepo = Boolean(cracl.config.monorepo);
+  const appDir = cracl.isMonoRepo
+    ? `${cracl.config.monorepo}/${cracl.config.writeApp}/src`
     : 'src';
 
-  // You want to allow a user to run 3 things at once if they want to generate a bunch of files
-  const fileWritePath = `${process.cwd()}/${appDir}`;
+  cracl.writePath = `${process.cwd()}/${appDir}`;
 
-  config.newFiles.map((newFile) =>
-    generateFiles(fileWritePath, newFile.type, newFile.name),
-  );
+  await cracl.generateFiles();
 };

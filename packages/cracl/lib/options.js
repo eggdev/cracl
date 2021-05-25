@@ -33,11 +33,16 @@ const options = [
   //   help: 'Use if a test should be generated',
   // },
   // TODO: Need to make this option passed with the component so it can be generated at the proper path
-  // {
-  //   names: ['index', 'i'],
-  //   type: 'bool',
-  //   help: 'Use if you want to generate an index.js file that exports the new component',
-  // },
+  {
+    names: ['index', 'i'],
+    type: 'bool',
+    help: 'Use if you want to generate an index.js file that exports the new component',
+  },
+  {
+    names: ['storybook', 's'],
+    type: 'bool',
+    help: 'Use this flag to auto generate a storybook component',
+  },
 ];
 
 const parseOptions = (args) => {
