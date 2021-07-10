@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.5.1...@eggdev/cracl@0.6.0) (2021-07-10)
+
+
+### Features
+
+* adding context and route ([8b866b8](https://github.com/eggdev/cracl/commit/8b866b80721f351df58fa459338d4f44462a6990))
+
+
+
+
+
 ## [0.5.1](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.5.0...@eggdev/cracl@0.5.1) (2021-07-10)
 
 
