@@ -70,6 +70,8 @@ class Cracl {
   async generateFiles() {
     this.config.newFiles.map(async ({type, name}) => {
       const templateString = templates[type];
+      console.log(type);
+
       const template = Handlebars.compile(templateString);
       const filename = parseFileName(type, name);
       const folderPath = `${this.writePath}/${type}`;

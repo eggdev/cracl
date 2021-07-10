@@ -7,8 +7,11 @@ const confirmOrWriteDirectory = async (folderPath) => {
 
 const parseFileName = (type, name) => {
   const hasUse = name.slice(0, 3) === 'use';
+
   switch (type) {
     case 'components':
+    case 'context':
+    case 'routes':
       // Parse to Pascal Case
       return pascalCase(name);
     case 'hooks':

@@ -10,7 +10,7 @@ exports.cracl = async () => {
   await cracl.applyUserArgs(userArgs);
   cracl.isMonoRepo = Boolean(cracl.config.monorepo);
   const appDir = cracl.isMonoRepo
-    ? `${cracl.config.monorepo}/${cracl.config.writeApp}/src`
+    ? `${cracl.config.monorepo}/${cracl.config.writeDir}/src`
     : 'src';
 
   cracl.writePath = `${process.cwd()}/${appDir}`;

@@ -21,11 +21,16 @@ const options = [
     help: 'Use if generating a Hook',
   },
   // TODO: If it's Next.js you want to change it to be pages directory
-  // {
-  //   names: ['routes', 'route', 'r'],
-  //   type: 'string',
-  //   help: 'Use if generating a Route',
-  // },
+  {
+    names: ['routes', 'route', 'r'],
+    type: 'string',
+    help: 'Use if generating a Route',
+  },
+  {
+    names: ['context', 'x'],
+    type: 'string',
+    help: 'Use to generate Context/Provider Wrapper',
+  },
   // TODO: Need to confirm Testing tool so in package.json/config so you can generate the right type
   // {
   //   names: ['test', 't'],
