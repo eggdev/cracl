@@ -50,8 +50,12 @@ class Cracl {
     });
   }
 
-  async generateIndex(folderPath, filename) {
-    const templateString = templates.index;
+  async generateIndex(folderPath, filename, type) {
+    let templateString = templates.index;
+    if (type === 'context') {
+      templateString = templates.context_index;
+    }
+
     const template = Handlebars.compile(templateString);
     const js = template({filename});
     await fs.writeFileSync(`${folderPath}/${filename}/index.js`, js);
@@ -70,8 +74,6 @@ class Cracl {
   async generateFiles() {
     this.config.newFiles.map(async ({type, name}) => {
       const templateString = templates[type];
-      console.log(type);
-
       const template = Handlebars.compile(templateString);
       const filename = parseFileName(type, name);
       const folderPath = `${this.writePath}/${type}`;
@@ -79,7 +81,7 @@ class Cracl {
       await this.writeToPath(folderPath, filename, js);
 
       if (this.withIndex) {
-        await this.generateIndex(folderPath, filename);
+        await this.generateIndex(folderPath, filename, type);
       }
       if (this.withStorybook) {
         await this.generateStorybook(folderPath, filename);
