@@ -1,6 +1,6 @@
 {
   "name": "@eggdev/cracl",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "React App Component Generator",
   "author": "Brendan Eggers <eggers.brendan@gmail.com>",
   "homepage": "https://github.com/eggdev/cracl#readme",

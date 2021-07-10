@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.5.0...@eggdev/cracl@0.5.1) (2021-07-10)
+
+
+### Bug Fixes
+
+* reworking the template for component to be more useful ([90ad84c](https://github.com/eggdev/cracl/commit/90ad84cd351daa9d67d5f7c9130363c2c9a3655b))
+* updating the templates for lint and prettier configs ([fcfbdbf](https://github.com/eggdev/cracl/commit/fcfbdbf2ecf556d6be08b07513c1257031d0c165))
+
+
+
+
+
 # [0.5.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.4.6...@eggdev/cracl@0.5.0) (2021-05-25)
 
 
