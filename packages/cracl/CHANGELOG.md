@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.6.0...@eggdev/cracl@0.6.1) (2021-07-10)
+
+
+### Bug Fixes
+
+* updating for context_index ([d34b80b](https://github.com/eggdev/cracl/commit/d34b80b9770a982ac4b6860693d41ab86c2bc491))
+
+
+
+
+
 # [0.6.0](https://github.com/eggdev/cracl/compare/@eggdev/cracl@0.5.1...@eggdev/cracl@0.6.0) (2021-07-10)
 
 
