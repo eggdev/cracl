@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 /** 
  *  {{filename}} Component
 */
-const {{filename}} = (props) => <>{{filename}}</>;
+const {{filename}} = (props) => {
+  return (
+    <div>{{filename}}</div>
+  )
+};
 
 {{filename}}.propTypes = {};
 
